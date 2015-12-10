@@ -38,7 +38,7 @@ function install_erlang() {
 
   cp -R $(erlang_build_path) $(erlang_path)
   PATH=$(erlang_path)/bin:$PATH
-  apt-get install erlang-dev
+  sudo apt-get install erlang-dev
 }
 
 function erlang_changed() {
